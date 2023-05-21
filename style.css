@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, #00aaff, #00ff6c );
+    min-height: 100vh;
+}
+
+.top-wrapper,
+form,
+.bottom-wrapper{
+    margin-top: 40px;
+}
+
+.content{
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.content h3{
+    border-bottom: solid 1px #999999;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.content p{
+    margin: 0;
+}

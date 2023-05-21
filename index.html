@@ -5,8 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Tracker</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="app.js" defer></script>
 </head>
 <body>
+    <section class="top-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Task Tracker</h2>
+                </div>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-8">
+                        <input type="text" name="task" id="task" class="form-control" placeholder="Write the task">
+                    </div>
+                    <div class="col-2">
+                        <input type="number" name="hours" id="hours" class="form-control">
+                    </div>
+                    <div class="col-2 d-grid">
+                        <button type="submit" class="btn btn-primary">Add Task</button>
+                    </div>
+                </div>    
+            </form>
+        </div>
+    </section>
+
+    <section class="bottom-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="content left">
+                        <h3 class="text-center">Good Task</h3>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Task</th>
+                                    <th>Hours</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Coding</td>
+                                    <td>10</td>
+                                    <td>
+                                        <button class="btn btn-danger btn-sm">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                        <button class="btn btn-success btn-sm">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>New Project</td>
+                                    <td>10</td>
+                                    <td>
+                                        <button class="btn btn-danger btn-sm">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                        <button class="btn btn-success btn-sm">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Total hours allowed = <span class="totalHrs">20</span>/168</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="content right">
+                        <h3 class="text-center">Bad Task</h3>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Task</th>
+                                    <th>Hours</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Netflix</td>
+                                    <td>10</td>
+                                    <td>
+                                        <button class="btn btn-warning btn-sm">
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </button>
+                                        <button class="btn btn-danger btn-sm">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Play Games</td>
+                                    <td>15</td>
+                                    <td>
+                                        <button class="btn btn-warning btn-sm">
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </button>
+                                        <button class="btn btn-danger btn-sm">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>You could have spend <span class="totalHrs">25</span> hours on productive work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
