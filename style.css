@@ -6,6 +6,7 @@
 body{
     background: linear-gradient(to right, #00aaff, #00ff6c );
     min-height: 100vh;
+    position: relative;
 }
 
 .top-wrapper,
@@ -28,4 +29,15 @@ form,
 
 .content p{
     margin: 0;
+}
+
+footer{
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+footer .updateInfo{
+    color: #000;
+    margin-left: 10px;
 }
